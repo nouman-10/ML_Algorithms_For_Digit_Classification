@@ -31,7 +31,7 @@ if __name__ == "__main__":
     if args.model_name == "lr":
         from sklearn.linear_model import LogisticRegression
 
-        model = LogisticRegression()
+        model = LogisticRegression(C=0.1)
 
         fit_and_predict_model(
             model,
